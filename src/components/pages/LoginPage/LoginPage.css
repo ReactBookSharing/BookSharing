@@ -1,0 +1,24 @@
+.LoginPage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.LoginPage__left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00d4ff;
+    color: #FFF;
+    font-size: 22px;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+}
+
+.LoginPage__right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+}

@@ -16,9 +16,16 @@
     font-family: 'Pacifico', cursive;
     font-weight: bold;
 }
-
+.LoginPage__left__text-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .LoginPage__right {
     height: 100%;
     width: 50%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }

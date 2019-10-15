@@ -1,0 +1,13 @@
+.book-preview{
+    background-color: aqua;
+    display: flex;
+    align-content: center;
+    margin: 2px;
+    
+}
+.book-preview-info{
+    padding: 20px; 
+}
+.book-preview-img{
+    width: 150px;
+}

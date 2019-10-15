@@ -1,0 +1,32 @@
+.NotFound {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .NotFound__content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .NotFound__404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 144px;
+    color: #f12157;
+  }
+  
+  .NotFound__image {
+    width: 120px;
+    margin: 0 8px;
+  }
+  
+  .NotFound__content--title {
+    padding: 16px 0;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+  }

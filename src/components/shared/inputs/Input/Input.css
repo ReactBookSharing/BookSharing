@@ -1,10 +1,6 @@
 .Input__wrapper {
     width: 100%;
     height: 100px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; */
 }
 
 .Input__label {
@@ -35,4 +31,8 @@
 }
 .Input__error-border {
     border: 1px solid #F74848;
+}
+
+.required--red {
+    color: #F74848;
 }

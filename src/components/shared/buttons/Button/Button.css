@@ -6,6 +6,10 @@
     padding: 5px 10px;
     border-radius: 5px;
 }
+.button-full {
+    width: 100%;
+}
+
 .button-transparent {
     background-color: #FFF;
     color: #00d4ff;
@@ -22,5 +26,12 @@
     background-color: #c4c4c4;
     color: #FFF;
     border: 1px solid #c4c4c4;
+}
 
+.margin-no {
+    margin: 0;
+}
+.margin-top-bottom-default {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

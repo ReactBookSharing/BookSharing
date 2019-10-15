@@ -1,0 +1,27 @@
+.RegisterPage {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+}
+
+.RegisterPage__title {
+    color: #000;
+    font-size: 24px;
+    height: 100px;
+}
+
+.RegisterPage {
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,.2)), url('../../../assets/images/library.jpg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.RegisterPage__container {
+    background: #FFF;
+}
+
+.RegisterPage__form {
+    padding: 50px 0;
+}

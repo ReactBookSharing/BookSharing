@@ -39,7 +39,7 @@ class LoginPage extends Component {
         onChange={handleChange}
         error={errors.username}
         touched={touched.username}
-        className="Input"
+        className=""
       />
       <Input
         name="password"
@@ -50,19 +50,19 @@ class LoginPage extends Component {
         onChange={handleChange}
         error={errors.password}
         touched={touched.password}
-        className="Input"
+        className=""
       />
       <div className="LoginPage__form__button-group">
         <Link to="/register">
           <Button
-            className="button button-transparent"
+            className="button-transparent"
             type="button"
             text="Регистрация"
             onClick={() => {}}
           />
         </Link>
         <Button
-          className="button button-filled"
+          className="button-filled"
           type="submit"
           text="Войти"
           onClick={() => {}}

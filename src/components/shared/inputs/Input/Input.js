@@ -19,13 +19,13 @@ class Input extends Component {
         } = this.props;
     
         return (
-          <div className={`input__wrapper`}>
-            <label className="input__label">
+          <div className={`Input__wrapper`}>
+            <label className="Input__label">
               {label}
               {required && <span className="text--red">*</span>}
             </label>
             <input
-              className={`input ${className} ${touched && error ? 'input--error' : ''}`}
+              className={`Input ${className} ${touched && error ? 'Input__error-border' : ''}`}
               type={type ? type : 'text'}
               name={name}
               onChange={onChange}
@@ -33,7 +33,7 @@ class Input extends Component {
               placeholder={placeholder}
               value={value}
             />
-            {touched && error && <p className="input__error">{error}</p>}
+            {touched && error && <p className="Input__error">{error}</p>}
             {tipText && <Tip text={tipText} />}
           </div>
         );

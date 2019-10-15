@@ -2,30 +2,23 @@
     width: 100%;
     height: 100vh;
     display: flex;
+    align-items: center;
+    overflow: visible;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,.2)), url('../../../assets/images/library.jpg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.LoginPage__left {
-    height: 100%;
-    width: 50%;
+.LoginPage__title {
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #00d4ff;
-    color: #FFF;
-    font-size: 22px;
-    font-family: 'Pacifico', cursive;
-    font-weight: bold;
 }
-.LoginPage__left__text-white {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.LoginPage__right {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.LoginPage__content {
+    background: #FFF;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }

@@ -4,6 +4,10 @@
     display: flex;
     align-items: center;
     overflow: visible;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,.2)), url('../../../assets/images/library.jpg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .RegisterPage__title {
@@ -12,12 +16,6 @@
     height: 100px;
 }
 
-.RegisterPage {
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,.2)), url('../../../assets/images/library.jpg') ;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 .RegisterPage__container {
     background: #FFF;
 }

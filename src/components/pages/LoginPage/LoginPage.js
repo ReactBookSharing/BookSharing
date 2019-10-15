@@ -30,49 +30,61 @@ class LoginPage extends Component {
     touched
   }) => (
     <form className="LoginPage__form" onSubmit={handleSubmit}>
-      <Input
-        name="username"
-        type="text"
-        placeholder="Имя пользователя"
-        label="Имя пользователя"
-        onBlur={() => setFieldTouched('username')}
-        onChange={handleChange}
-        error={errors.username}
-        touched={touched.username}
-        className=""
-      />
-      <Input
-        name="password"
-        type="password"
-        placeholder="Пароль"
-        label="Пароль"
-        onBlur={() => setFieldTouched('password')}
-        onChange={handleChange}
-        error={errors.password}
-        touched={touched.password}
-        className=""
-      />
-      <div className="LoginPage__form__button-group">
-        <Link to="/register">
-          <Button
-            className="button-transparent"
-            type="button"
-            text="Регистрация"
-            onClick={() => {}}
+      <div className="row">
+        <div className="col-12">
+          <Input
+            name="username"
+            type="text"
+            placeholder="Имя пользователя"
+            label="Имя пользователя"
+            onBlur={() => setFieldTouched('username')}
+            onChange={handleChange}
+            error={errors.username}
+            touched={touched.username}
+            className=""
           />
-        </Link>
-        <Button
-          className="button-filled"
-          type="submit"
-          text="Войти"
-          onClick={() => {}}
-          disabled={
-            !(
-              Object.entries(errors).length === 0 &&
-              errors.constructor === Object
-            )
-          }
-        />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-12">
+          <Input
+            name="password"
+            type="password"
+            placeholder="Пароль"
+            label="Пароль"
+            onBlur={() => setFieldTouched('password')}
+            onChange={handleChange}
+            error={errors.password}
+            touched={touched.password}
+            className=""
+          />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-12 col-md-6">
+          <Link to="/register">
+            <Button
+              className="button-transparent button-full margin-no margin-top-bottom-default"
+              type="button"
+              text="Регистрация"
+              onClick={() => {}}
+            />
+          </Link>
+        </div>
+        <div className="col-12 col-md-6">
+          <Button
+            className="button-filled button-full margin-no margin-top-bottom-default"
+            type="submit"
+            text="Войти"
+            onClick={() => {}}
+            disabled={
+              !(
+                Object.entries(errors).length === 0 &&
+                errors.constructor === Object
+              )
+            }
+          />
+        </div>
       </div>
     </form>
   );
@@ -80,12 +92,12 @@ class LoginPage extends Component {
   render() {
     return (
       <div className="LoginPage">
-        <div className="LoginPage__left">
-          <h1 className="LoginPage__left__text-white">
-            BookSharing вас приветсвует!
-          </h1>
-        </div>
-        <div className="LoginPage__right">
+        <div className="container LoginPage__content">
+          <div className="row">
+            <div className="col-12">
+              <h1 className="LoginPage__title text-center">Регистрация</h1>
+            </div>
+          </div>
           <Formik
             onSubmit={values => {
               this.handleSubmit(values);

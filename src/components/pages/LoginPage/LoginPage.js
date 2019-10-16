@@ -4,10 +4,41 @@ import { Formik } from 'formik';
 import { Link } from 'react-router-dom';
 import Input from '../../shared/inputs/Input/Input';
 import Button from '../../shared/buttons/Button/Button';
-
+import {connect} from "react-redux";
+import { login } from "../../../actions/profile.actions";
 class LoginPage extends Component {
+
+  state = {
+    values: {}
+  };
+
+  componentDidMount() {
+    if(this.props.token) {
+      localStorage.setItem('token', this.props.token);
+    } else {
+      const token = localStorage.getItem('token');
+      if(token) {
+        //updateHeader('Authorization', `Token ${token}`);
+        this.props.history('/profile');
+      }
+    }
+  }
+  
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if(prevState.values != prevState.values) {
+      // here should request to back
+      const response = {
+        token: 'asdfadsfasdfasdfsa324234423'
+      };
+      localStorage.setItem('token', response.token);
+      this.props.login(response);
+    }
+  }
+
   handleSubmit = values => {
-    console.log(values);
+    this.setState({
+      values
+    });
   };
 
   validateForm = values => {
@@ -95,7 +126,7 @@ class LoginPage extends Component {
         <div className="container LoginPage__content">
           <div className="row">
             <div className="col-12">
-              <h1 className="LoginPage__title text-center">Регистрация</h1>
+              <h1 className="LoginPage__title text-center">Логин</h1>
             </div>
           </div>
           <Formik
@@ -115,4 +146,11 @@ class LoginPage extends Component {
   }
 }
 
-export default LoginPage;
+
+export function mapStateToProps(state) {
+  return {
+    token: state.profile.token
+  }
+}
+
+export default connect(mapStateToProps, { login })(LoginPage);

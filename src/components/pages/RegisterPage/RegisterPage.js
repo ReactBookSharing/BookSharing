@@ -4,10 +4,29 @@ import { Formik } from 'formik';
 import { Link } from 'react-router-dom';
 import Input from '../../shared/inputs/Input/Input';
 import Button from '../../shared/buttons/Button/Button';
-
+import { connect } from 'react-redux';
+import { login, register } from '../../../actions/profile.actions';
 class RegisterPage extends Component {
+  state = {
+    values: {}
+  };
+
+  componentDidMount() {
+
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if(prevState.values !== this.state.values) {
+      // request to back
+      this.props.login(this.state.values);
+      this.props.history.push('/profile');
+    }
+  }
+
   handleSubmit = values => {
-    console.log(values);
+    this.setState({
+      values
+    });
   };
 
   validateForm = values => {
@@ -240,4 +259,5 @@ class RegisterPage extends Component {
     );
   }
 }
-export default RegisterPage;
+
+export default connect(null, { login, register })(RegisterPage);

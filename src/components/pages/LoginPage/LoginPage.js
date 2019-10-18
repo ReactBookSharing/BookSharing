@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Input from '../../shared/inputs/Input/Input';
 import Button from '../../shared/buttons/Button/Button';
 import {connect} from "react-redux";
-import { login } from "../../../actions/profile.actions";
+import { login } from "../../../actions/auth.actions";
 class LoginPage extends Component {
 
   state = {

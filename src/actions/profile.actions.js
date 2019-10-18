@@ -1,34 +1,33 @@
-export const LOGIN = 'LOGIN';
-export const LOG_OUT = 'LOG_OUT';
-export const CLEAR_DATA = 'CLEAR_DATA';
-export const REGISTER_USER = 'REGISTER_USER';
+export const GET_MY_PROFILE = 'GET_MY_PROFILE';
+export const GET_PROFILE = 'GET_PROFILE';
 export const CREATE_PROFILE = 'CREATE_PROFILE';
 export const PROFILE_TO_EDIT = 'PROFILE_TO_EDIT';
 
-export const login = response => dispatch => {
+
+export const getMyProfile = response => dispatch => {
     dispatch({
-        type: LOGIN,
+        type: GET_MY_PROFILE,
         payload: response.data
     });
 };
 
-export const logout = response => dispatch => {
+export const getProfile = response => dispatch => {
     dispatch({
-        type: LOG_OUT,
-        payload: {}
-    });
-};
-
-export const clearData = () => dispatch => {
-    dispatch({
-        type: CLEAR_DATA,
-        payload: {}
+        type: GET_PROFILE,
+        payload: response.data
     });
 }
 
-export const register = response => dispatch => {
+export const createProfile = response => dispatch => {
     dispatch({
-        type: REGISTER_USER,
+        type: CREATE_PROFILE,
+        payload: response.data
+    });
+}
+
+export const editProfile = response => dispatch => {
+    dispatch({
+        type: PROFILE_TO_EDIT,
         payload: response.data
     });
 }

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Input from '../../shared/inputs/Input/Input';
 import Button from '../../shared/buttons/Button/Button';
 import { connect } from 'react-redux';
-import { login, register } from '../../../actions/profile.actions';
+import { login, register } from '../../../actions/auth.actions';
 class RegisterPage extends Component {
   state = {
     values: {}

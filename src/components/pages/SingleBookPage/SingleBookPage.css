@@ -1,5 +1,5 @@
 .book-preview{
-    background-color: rgb(204, 204, 204);
+    background-color: aqua;
     display: flex;
     align-content: center;
     margin: 2px;
@@ -9,5 +9,5 @@
     padding: 20px; 
 }
 .book-preview-img{
-    width: 150px;
+    width: 250px;
 }

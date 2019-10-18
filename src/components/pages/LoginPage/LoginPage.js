@@ -25,7 +25,7 @@ class LoginPage extends Component {
   }
   
   componentDidUpdate(prevProps, prevState, snapshot) {
-    if(prevState.values != prevState.values) {
+    if(prevState.values !== this.state.values) {
       // here should request to back
       const response = {
         token: 'asdfadsfasdfasdfsa324234423'

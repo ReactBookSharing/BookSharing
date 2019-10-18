@@ -18,6 +18,8 @@ function App() {
         <Route exact path="/profile" component = { ProfilePage }/>
         <Route exact path="/check" component = { SingleBookPage }/>
         {/* <Route path="/" component = { NotFoundPage} /> */}
+        <Route exact path="/not" component = {NotFoundPage} />
+
       </BrowserRouter>
     </div>
   );

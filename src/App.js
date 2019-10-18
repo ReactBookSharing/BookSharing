@@ -5,6 +5,8 @@ import LoginPage from './components/pages/LoginPage/LoginPage';
 import RegisterPage from './components/pages/RegisterPage/RegisterPage';
 import NotFoundPage from './components/pages/NotFoundPage/NotFoundPage';
 import ProfilePage from './components/pages/ProfilePage/ProfilePage';
+import SingleBookPage from './components/pages/SingleBookPage/SingleBookPage'
+
 import './App.css';
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <Route exact path="/login" component = { LoginPage }/>
         <Route exact path="/register" component = { RegisterPage }/>
         <Route exact path="/profile" component = { ProfilePage }/>
+        <Route exact path="/check" component = { SingleBookPage }/>
         {/* <Route path="/" component = { NotFoundPage} /> */}
       </BrowserRouter>
     </div>

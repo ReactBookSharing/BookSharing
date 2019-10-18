@@ -1,0 +1,12 @@
+.Header{
+    width: 100%;
+}
+.Header__nav-links{
+    height: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.Header__logo{
+    width: 100px;
+}

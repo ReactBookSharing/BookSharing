@@ -14,7 +14,7 @@ function App() {
         <Route exact path="/login" component = { LoginPage }/>
         <Route exact path="/register" component = { RegisterPage }/>
         <Route exact path="/profile" component = { ProfilePage }/>
-        {/* <Route path="/" component = { NotFoundPage} /> */}
+        <Route exact path="/not" component = {NotFoundPage} />
       </BrowserRouter>
     </div>
   );

@@ -1,12 +1,26 @@
 .Header{
-    width: 100%;
+
 }
-.Header__nav-links{
-    height: 50px;
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
+
+.Header__row {
+    height: 100px;
+    background: #036ffc;
 }
+
+.Header__nav__link {
+    color: #FFF;
+}
+
+.Header__nav__link:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.Header__nav__link:visited {
+    color: #FFF;
+    text-decoration: none;
+}
+
 .Header__logo{
     width: 100px;
 }

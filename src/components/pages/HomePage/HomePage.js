@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Header from '../../shared/Header/Header';
+import Footer from '../../shared/Footer/Footer';
 import BookPreview from '../../shared/BookPreview/BookPreview';
 class HomePage extends Component {
     state=  {
@@ -40,14 +41,18 @@ class HomePage extends Component {
         const { books } = this.state;
 
         return (
-            <div className="container">
+            <div className="HomePage">
                 <Header/>
-                <div className="books-list">
-                    {books.map((book) => (
-                        <BookPreview book={book}/>
-                    ))}
+                <div className="container">
+                    <div className="books-list">
+                        {books.map((book) => (
+                            <BookPreview book={book}/>
+                        ))}
+                    </div>
                 </div>
+                <Footer/>
             </div>
+
         )
     }
 }

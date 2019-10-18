@@ -1,35 +1,96 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
-import Input from '../inputs/Input/Input'
 import './Header.css';
-
+import { connect } from 'react-redux';
 const navLinks = [
-    {
-      link: '/',
-      text: 'Главная',
-    },
-    {
-      link: '/profile',
-      text: 'Профиль',
-    },
-    
-  ];
-export default class Header extends Component {
-    render() {
-        return (
-            <div className="row Header">
-                <img className="Header__logo" src="https://www.casacatag.it/wp-content/uploads/2018/12/Book-Sharing-Facebook.png"/>
-                <div className="Header__nav-links"> 
-                {navLinks.map((navLink, index) => (
-                    <NavLink key={index} to={navLink.link} className="Header__nav__link">
-                        {navLink.text}
+  {
+    link: '/',
+    text: 'Главная',
+    forAuth: 0
+  },
+  {
+    link: '/listing',
+    text: 'Каталог',
+    forAuth: 0
+  },
+  {
+    link: '/faq',
+    text: 'FAQ',
+    forAuth: 0
+  },
+  {
+    link: '/login',
+    text: 'Войти',
+    forAuth: 1
+  },
+  {
+    link: '/register',
+    text: 'Регистрация',
+    forAuth: 1
+  },
+  {
+    link: '/profile',
+    text: 'Профиль',
+    forAuth: 2
+  },
+  {
+    link: '/logout',
+    text: 'Выйти',
+    forAuth: 2
+  }
+];
+class Header extends Component {
+  render() {
+    const { token } = this.props;
+    return (
+      <div className="container-fluid Header">
+        <div className="row Header__row">
+          <div className="col-2 d-flex justify-content-center align-items-center">
+            <NavLink to="/" className="Header__nav__link">
+              <img
+                className="Header__logo"
+                src="https://www.casacatag.it/wp-content/uploads/2018/12/Book-Sharing-Facebook.png"
+              />
+            </NavLink>
+          </div>
+          <div className="offset-1 col-9 d-flex justify-content-around align-items-center">
+            {navLinks.map((navLink, index) => {
+              if (token) {
+                return navLink.forAuth === 0 || navLink.forAuth === 2 ? (
+                  <NavLink
+                    key={index}
+                    to={navLink.link}
+                    className="Header__nav__link"
+                  >
+                    {navLink.text}
+                  </NavLink>
+                ) : null;
+              } else {
+                return navLink.forAuth === 0 || navLink.forAuth === 1 ? (
+                    <NavLink
+                      key={index}
+                      to={navLink.link}
+                      className="Header__nav__link"
+                    >
+                      {navLink.text}
                     </NavLink>
-                ))}
-                </div>
-                <div className="col-12 d-flex justify-content-between">
-                    <Input placeholder="Search"/>
-                </div>
-            </div>
-        )
-    }
+                  ) : null;
+              }
+            })}
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
+
+function mapStateToProps(state) {
+  return {
+    token: state.auth.token
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  null
+)(Header);

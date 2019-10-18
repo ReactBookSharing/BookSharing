@@ -1,0 +1,16 @@
+.Footer {
+    padding-top: 20px;
+    color: #FFF;
+    background: #036ffc;
+}
+.Footer__top {
+    padding: 20px;
+}
+.Footer__top__list {
+    list-style: none;
+}
+.Footer__bottom {
+    color: #FFF;
+    height: 60px;
+    background: #004fb5;
+}

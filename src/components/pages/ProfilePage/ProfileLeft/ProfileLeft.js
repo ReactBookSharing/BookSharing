@@ -6,7 +6,7 @@ class ProfileLeft extends Component {
 
     return (
       <div className={className}>
-        <div className="card ProfileLeft__card">
+        <div className="card">
           <div className="card-header">
             <h3 className="card-title text-center">@{ profile.name }</h3>
           </div>

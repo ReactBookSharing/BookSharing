@@ -5,7 +5,8 @@ import LoginPage from './components/pages/LoginPage/LoginPage';
 import RegisterPage from './components/pages/RegisterPage/RegisterPage';
 import NotFoundPage from './components/pages/NotFoundPage/NotFoundPage';
 import ProfilePage from './components/pages/ProfilePage/ProfilePage';
-import SingleBookPage from './components/pages/SingleBookPage/SingleBookPage'
+
+// import SingleBookPage from './components/pages/SingleBookPage/SingleBookPage'
 
 import './App.css';
 function App() {
@@ -17,7 +18,7 @@ function App() {
           <Route exact path="/login" component = { LoginPage }/>
           <Route exact path="/register" component = { RegisterPage }/>
           <Route path="/profile" component = { ProfilePage }/>
-          <Route exact path="/check" component = { SingleBookPage }/>
+          {/* <Route exact path="/check" component = { SingleBookPage }/> */}
           <Route path="*" component = {NotFoundPage} />
         </Switch>
       </BrowserRouter>

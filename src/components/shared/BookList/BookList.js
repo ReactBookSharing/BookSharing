@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import './BookList.css';
 import BookPreview from '../BookPreview/BookPreview';
 class BookList extends Component {

@@ -1,13 +1,34 @@
-.book-preview{
-    background-color: rgb(204, 204, 204);
+.Book-preview{
     display: flex;
     align-content: center;
     margin: 2px;
     
 }
-.book-preview-info{
+.Book-preview-info{
+    color: #000000;
     padding: 20px; 
+    font-size: 30px;
 }
-.book-preview-img{
+.Book-preview-img{
     width: 150px;
+    min-height: 50px;
+    padding: 20px;
 }
+.Book-name{
+    font-size: 25px;
+    margin: 20px;
+}
+.Book-info{
+    margin: 15px;
+}
+.Book-author{
+    font-size: 15px;
+}
+.Published-year{
+    font-size: 15px;
+}
+.Book-owner{
+    font-size: 15px;
+}
+
+

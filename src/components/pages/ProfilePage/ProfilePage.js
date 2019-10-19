@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
 import BookPreview from '../../shared/BookPreview/BookPreview';
-
-
-export default class ProfilePage extends Component {
+import Header from '../../shared/Header/Header';
+import Footer from '../../shared/Footer/Footer';
+import ProfileLeft from './ProfileLeft/ProfileLeft';
+import profileImg from '../../../assets/images/profile.png';
+class ProfilePage extends Component {
     state = {
         profile: {
             name: 'Derbes',
             surname: 'Utebaliyev',
             username: 'derbess',
             phone_number: '+77471194810',
+            photo: profileImg,
             books: [
                 {
                     img: 'https://prodimage.images-bn.com/pimages/9780062024329_p0_v1_s550x406.jpg',
@@ -29,11 +32,17 @@ export default class ProfilePage extends Component {
         const {profile} = this.state;
         const {books} = this.state.profile;
         return (
-            <div className="profile">
-                <div className="profile__query">
-                    <h3>Profile page</h3>
+            <div className="ProfilePage">
+                <Header/>
+                <div className="container ProfilePage__container">
+                    <div className="row">
+                        <ProfileLeft profile={profile} className={'col-xl-3 col-lg-12 col-md-12'}/>
+                    </div>
                 </div>
+                <Footer/>
             </div>
         )
     }
 }
+
+export default ProfilePage;

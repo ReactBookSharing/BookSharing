@@ -1,22 +1,24 @@
 import React, { Component } from 'react'
 import Header from '../../shared/Header/Header';
-import smile from '../../../assets/images/404.png';
+import Footer from '../../shared/Footer/Footer';
 import './NotFoundPage.css';
 export default class NotFoundPage extends Component {
     render() {
         return (
-          <>
-          <Header/>
-          <div className="NotFound">
-            <div className="NotFound__content">
-              <div className="NotFound__404">
-                4
-                <img className="NotFound__image" src={smile} alt="smile" />4
+          <div className="NotFoundPage">
+            <Header/>
+            <div className="container NotFound__content">
+              <div className="row">
+                <div className="col-12 NotFound__404">
+                  404
+                </div>
               </div>
-              <div className="NotFound__content--title">Упс... что то пошло не так</div>
+              <div className="row">
+                <div className="col-12 NotFound__content--title">Упс... что то пошло не так</div>
+              </div>
             </div>
+            <Footer/>
           </div>
-          </>
         );
       }
 }

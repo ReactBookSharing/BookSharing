@@ -19,7 +19,7 @@ class LoginPage extends Component {
       const token = localStorage.getItem('token');
       if(token) {
         //updateHeader('Authorization', `Token ${token}`);
-        this.props.history('/profile');
+        this.props.history.push('/profile');
       }
     }
   }

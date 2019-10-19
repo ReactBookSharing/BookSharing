@@ -26,11 +26,11 @@ class ProfileLeft extends Component {
                   alt="user"
                 />
               </div>
-              <a href="userprofile.html" className="text-dark">
+              <Link to="/profile" className="text-dark">
                 <h4 className="mt-3 mb-0 font-weight-semibold">
                   { profile.name } { profile.surname }
                 </h4>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="item1-links  mb-0">

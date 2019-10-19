@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink, withRouter } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import './Header.css';
 import { connect } from 'react-redux';
 const navLinks = [
@@ -50,6 +50,7 @@ class Header extends Component {
               <img
                 className="Header__logo"
                 src="https://www.casacatag.it/wp-content/uploads/2018/12/Book-Sharing-Facebook.png"
+                alt=""
               />
             </NavLink>
           </div>

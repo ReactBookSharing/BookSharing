@@ -5,7 +5,7 @@ import Input from '../../../shared/inputs/Input/Input';
 import Button from '../../../shared/buttons/Button/Button';
 import { connect } from 'react-redux';
 import { editProfile } from '../../../../actions/profile.actions';
-import requests from '../../../../services/requests';
+// import requests from '../../../../services/requests';
 class ProfileEdit extends Component {
   state = {
     values: {}
@@ -75,7 +75,7 @@ class ProfileEdit extends Component {
     setFieldTouched,
     touched
   }) => {
-    const { values } = this.state;
+    // const { values } = this.state;
     return (
       <form className="RegisterPage__form" onSubmit={handleSubmit}>
         <div className="row">
@@ -192,7 +192,7 @@ class ProfileEdit extends Component {
   };
 
   render() {
-    const { profile } = this.props;
+    // const { profile } = this.props;
     const { values } = this.state;
     return (
       <div className="col-xl-9 col-lg-12 col-md-12">

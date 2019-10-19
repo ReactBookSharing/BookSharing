@@ -11,7 +11,7 @@ class BookPreview extends Component {
                 <div class="border-0">
                     <div className="row">
                     <div className="col-md-2 offset-1 d-flex flex-column align-items-center">
-                        <img className="Book-preview-img" src={book.img} />
+                        <img className="Book-preview-img" src={book.img} alt="" />
                     </div>
                     <div className="col-md-6">
                         <h2 className="Book-name"><b>{book.book_name}</b></h2>

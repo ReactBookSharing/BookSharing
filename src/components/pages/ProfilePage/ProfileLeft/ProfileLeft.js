@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './ProfileLeft.css';
 class ProfileLeft extends Component {
   render() {
-    const { profile, className, isOwn } = this.props;
+    const { profile, className } = this.props;
 
     return (
       <div className={className}>

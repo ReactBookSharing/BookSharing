@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Header from '../../shared/Header/Header';
 import Footer from '../../shared/Footer/Footer';
-import BookPreview from '../../shared/BookPreview/BookPreview';
+// import BookPreview from '../../shared/BookPreview/BookPreview';
+import { Link } from 'react-router-dom';
 import './HomePage.css';
 class HomePage extends Component {
     state=  {
@@ -39,7 +40,7 @@ class HomePage extends Component {
         ]
     }
     render() {
-        const { books } = this.state;
+        // const { books } = this.state;
 
         return (
             <div className="HomePage">
@@ -47,19 +48,18 @@ class HomePage extends Component {
                 <div className="Main-page-preview">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-5">
+                            <div className="col-12 col-md-5">
                                 <h1>Give books away. <br></br>Get books you want</h1>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra lorem orci, nec tincidunt erat condimentum eu. Maecenas pellentesque leo eget accumsan semper. Maecenas malesuada augue id sodales tincidunt. Fusce varius eros eget lobortis feugiat. Proin aliquam placerat libero. Nulla ut arcu et nulla condimentum fermentum at non mauris. Maecenas a magna neque. Suspendisse potenti. Nunc erat risus, accumsan ut quam quis, aliquam tincidunt leo.
                                 </p>
                                 <br/>
-                                <form action="http://localhost:3000/register">
-                                    <input class="btn btn-success"  type="submit" value="Начать" />
-                                </form>
+                                <Link to="/register">
+                                    <span className="btn btn-success">Начать</span>
+                                </Link>
                             </div>
-                            <div className="col-md-1"></div>
-                            <div className="col-md-4">
-                                <img className="MainPage-img" src='https://media.ldscdn.org/images/media-library/member-missionary/sharing-book-mormon-1379950-gallery.jpg' />
+                            <div className="offset-1 col-md-6">
+                                <img className="MainPage-img" src='https://media.ldscdn.org/images/media-library/member-missionary/sharing-book-mormon-1379950-gallery.jpg' alt=""/>
                             </div>
                         </div>
                     </div>

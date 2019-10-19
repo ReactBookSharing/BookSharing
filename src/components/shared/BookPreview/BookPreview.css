@@ -30,5 +30,11 @@
 .Book-owner{
     font-size: 15px;
 }
+.BookPreview__wrapper {
+    
+}
 
-
+.BookPreview__img {
+    max-width: 100%;
+    min-width: 100px;
+}

@@ -27,6 +27,139 @@ class BookFiltering extends Component {
                       </a>
                     </span>
                   </label>
+                  <label class="custom-control custom-checkbox mb-3">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      name="checkbox7"
+                      value="option3"
+                    />
+                    <span class="custom-control-label">
+                      <a href="" class="text-dark">
+                        Author
+                        <span class="label label-secondary float-right">
+                          05
+                        </span>
+                      </a>
+                    </span>
+                  </label>
+                  <label class="custom-control custom-checkbox mb-3">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      name="checkbox7"
+                      value="option3"
+                    />
+                    <span class="custom-control-label">
+                      <a href="" class="text-dark">
+                      Fiction
+                        <span class="label label-secondary float-right">
+                          05
+                        </span>
+                      </a>
+                    </span>
+                  </label>
+
+                  <label class="custom-control custom-checkbox mb-3">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      name="checkbox7"
+                      value="option3"
+                    />
+                    <span class="custom-control-label">
+                      <a href="" class="text-dark">
+                      Anthology
+                        <span class="label label-secondary float-right">
+                          05
+                        </span>
+                      </a>
+                    </span>
+                  </label>
+
+                  <label class="custom-control custom-checkbox mb-3">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      name="checkbox7"
+                      value="option3"
+                    />
+                    <span class="custom-control-label">
+                      <a href="" class="text-dark">
+                      History
+                        <span class="label label-secondary float-right">
+                          05
+                        </span>
+                      </a>
+                    </span>
+                  </label>
+
+                  <label class="custom-control custom-checkbox mb-3">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      name="checkbox7"
+                      value="option3"
+                    />
+                    <span class="custom-control-label">
+                      <a href="" class="text-dark">
+                      Romance
+                        <span class="label label-secondary float-right">
+                          05
+                        </span>
+                      </a>
+                    </span>
+                  </label>
+
+                  <label class="custom-control custom-checkbox mb-3">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      name="checkbox7"
+                      value="option3"
+                    />
+                    <span class="custom-control-label">
+                      <a href="" class="text-dark">
+                      Horror
+                        <span class="label label-secondary float-right">
+                          05
+                        </span>
+                      </a>
+                    </span>
+                  </label>
+                  <label class="custom-control custom-checkbox mb-3">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      name="checkbox7"
+                      value="option3"
+                    />
+                    <span class="custom-control-label">
+                      <a href="" class="text-dark">
+                      Biography
+                        <span class="label label-secondary float-right">
+                          05
+                        </span>
+                      </a>
+                    </span>
+                  </label>
+                  <label class="custom-control custom-checkbox mb-3">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      name="checkbox7"
+                      value="option3"
+                    />
+                    <span class="custom-control-label">
+                      <a href="" class="text-dark">
+                      Drama
+                        <span class="label label-secondary float-right">
+                          05
+                        </span>
+                      </a>
+                    </span>
+                  </label>
+
                 </div>
               </div>
             </div>

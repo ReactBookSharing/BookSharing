@@ -43,3 +43,8 @@ export function getOwnProfile() {
 export function getProfilesBooks(profile) {
     return api.get(`profile/${profile.id}/books/`);
 }
+
+
+export function editProfile(profile) {
+    return api.pu(`profile/${profile}/`, profile);
+}

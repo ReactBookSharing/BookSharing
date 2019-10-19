@@ -3,7 +3,9 @@ import * as books from './books';
 import * as profiles from './profile';
 
 const requests = {
-    auth, books, profiles
+    auth: auth, 
+    books: books, 
+    profiles: profiles
 }
 
 export default requests;

@@ -30,7 +30,8 @@ export default function(state = initialState, action) {
     case PROFILE_TO_EDIT:
         return {
             ...state,
-            status: "EDITED"
+            status: "EDITED",
+            profile: action.payload
         }
     default:
       return state;

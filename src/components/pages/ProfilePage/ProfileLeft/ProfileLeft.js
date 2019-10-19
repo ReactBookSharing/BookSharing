@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './ProfileLeft.css';
 class ProfileLeft extends Component {
   render() {
@@ -33,30 +34,30 @@ class ProfileLeft extends Component {
             </div>
           </div>
           <div className="item1-links  mb-0">
-            <a href="" className="active d-flex align-items-center justify-content-start border-bottom  ProfileLeft__card__item">
+            <Link to="/profile/edit/" className="active d-flex align-items-center justify-content-start border-bottom  ProfileLeft__card__item">
               <span className="icon1 mr-3">
                 <i className="mdi mdi-account-card-details"></i>
               </span>{' '}
               Редактировать профиль
-            </a>
-            <a href="" className="active d-flex align-items-center justify-content-start border-bottom  ProfileLeft__card__item">
+            </Link>
+            <Link to="/profile/books" className="active d-flex align-items-center justify-content-start border-bottom  ProfileLeft__card__item">
               <span className="icon1 mr-3">
                 <i className="icon icon-user"></i>
               </span>{' '}
               Мои книги
-            </a>
-            <a href="" className="active d-flex align-items-center justify-content-start border-bottom  ProfileLeft__card__item">
+            </Link>
+            <Link to="/profile/history" className="active d-flex align-items-center justify-content-start border-bottom  ProfileLeft__card__item">
               <span className="icon1 mr-3">
                 <i className="icon icon-user"></i>
               </span>{' '}
               История активности
-            </a>
-            <a href="" className="d-flex align-items-center justify-content-start  ProfileLeft__card__item">
+            </Link>
+            <Link to="/logout" className="d-flex align-items-center justify-content-start  ProfileLeft__card__item">
               <span className="icon1 mr-3">
                 <i className="icon icon-power"></i>
               </span>{' '}
               Выйти
-            </a>
+            </Link>
           </div>
         </div>
       </div>

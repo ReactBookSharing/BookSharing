@@ -16,7 +16,7 @@ function App() {
           <Route exact path="/" component = { HomePage }/>
           <Route exact path="/login" component = { LoginPage }/>
           <Route exact path="/register" component = { RegisterPage }/>
-          <Route exact path="/profile" component = { ProfilePage }/>
+          <Route path="/profile" component = { ProfilePage }/>
           <Route exact path="/check" component = { SingleBookPage }/>
           <Route path="*" component = {NotFoundPage} />
         </Switch>

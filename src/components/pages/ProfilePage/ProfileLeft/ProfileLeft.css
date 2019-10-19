@@ -8,4 +8,11 @@
 
 .ProfileLeft__card__item {
     min-height: 50px;
+    color: #036ffc;
+    text-decoration: none;
+}
+
+.ProfileLeft__card__item:visited , .ProfileLeft__card__item:hover {
+    color: #036ffc;
+    text-decoration: none;
 }

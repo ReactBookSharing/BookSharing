@@ -6,6 +6,8 @@ import Input from '../../shared/inputs/Input/Input';
 import Button from '../../shared/buttons/Button/Button';
 import {connect} from "react-redux";
 import { login } from "../../../actions/auth.actions";
+// import requests from '../../../services/requests';
+import { updateHeader } from '../../../services/api';
 class LoginPage extends Component {
 
   state = {
@@ -13,13 +15,14 @@ class LoginPage extends Component {
   };
 
   componentDidMount() {
-    if(this.props.token) {
-      localStorage.setItem('token', this.props.token);
+    const { token } = this.props;
+    if(token) {
+      localStorage.setItem('token', token);
+      // this.props.history.push('/profile');
     } else {
       const token = localStorage.getItem('token');
       if(token) {
-        //updateHeader('Authorization', `Token ${token}`);
-        this.props.history.push('/profile');
+        updateHeader('Authorization', `Token ${token}`);
       }
     }
   }
@@ -28,10 +31,11 @@ class LoginPage extends Component {
     if(prevState.values !== this.state.values) {
       // here should request to back
       const response = {
-        token: 'asdfadsfasdfasdfsa324234423'
+        data: 'asdfadsfasdfasdfsa324234423'
       };
       localStorage.setItem('token', response.token);
       this.props.login(response);
+      this.props.history.push('/profile');
     }
   }
 
@@ -39,6 +43,7 @@ class LoginPage extends Component {
     this.setState({
       values
     });
+    // this.props.login(values);
   };
 
   validateForm = values => {

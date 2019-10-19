@@ -11,7 +11,7 @@ export const login = response => dispatch => {
     });
 };
 
-export const logout = response => dispatch => {
+export const logout = () => dispatch => {
     dispatch({
         type: LOG_OUT,
         payload: {}

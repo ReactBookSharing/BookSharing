@@ -4,9 +4,8 @@ import './ProfileLeft.css';
 class ProfileLeft extends Component {
   render() {
     const { profile, className } = this.props;
-
     return (
-      <div className={className}>
+      <div className={`${className} ProfileLeft`}>
         <div className="card">
           <div className="card-header">
             <h3 className="card-title text-center">@{ profile.name }</h3>
@@ -46,12 +45,12 @@ class ProfileLeft extends Component {
               </span>{' '}
               Мои книги
             </Link>
-            <Link to="/profile/history" className="active d-flex align-items-center justify-content-start border-bottom  ProfileLeft__card__item">
+            {/* <Link to="/profile/history" className="active d-flex align-items-center justify-content-start border-bottom  ProfileLeft__card__item">
               <span className="icon1 mr-3">
                 <i className="icon icon-user"></i>
               </span>{' '}
               История активности
-            </Link>
+            </Link> */}
             <Link to="/logout" className="d-flex align-items-center justify-content-start  ProfileLeft__card__item">
               <span className="icon1 mr-3">
                 <i className="icon icon-power"></i>

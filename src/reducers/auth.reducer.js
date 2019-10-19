@@ -14,7 +14,7 @@ export default function(state = initialState, action) {
     case LOGIN:
       return {
         ...state,
-        token: action.payload.token
+        token: action.payload
       };
 
     case REGISTER_USER:

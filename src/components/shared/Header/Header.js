@@ -9,7 +9,7 @@ const navLinks = [
     forAuth: 0
   },
   {
-    link: '/listing',
+    link: '/books',
     text: 'Каталог',
     forAuth: 0
   },

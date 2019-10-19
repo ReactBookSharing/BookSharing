@@ -10,7 +10,9 @@ class BookPreview extends Component {
         </div>
         <div className="card-body">
           <div className="row border-0">
-            <div className="col-12 col-md-4 BookPreview__wrapper"><img className="BookPreview__img" src={ book.img }/></div>
+            <div className="col-12 col-md-4 BookPreview__wrapper">
+              <img alt="BookPreview__img" className="BookPreview__img" src={ book.img }/>
+              </div>
             <div className="col-12 col-md-8 BookPreview__right">
               <ul className="usertab-list mb-0">
                 <li>

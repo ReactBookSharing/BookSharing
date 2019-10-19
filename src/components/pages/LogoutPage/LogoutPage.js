@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
-
+import { connect } from 'react-redux';
+import { logout, clearData } from '../../../actions/auth.actions';
 class LogoutPage extends Component {
-    
-    componentDidUpdate() {
 
+    componentDidMount() {
+        this.props.logout();
+        this.props.clearData();
+        localStorage.clear();
+        this.props.history.push('/');
     }
 
     render() {
@@ -14,4 +18,4 @@ class LogoutPage extends Component {
     }
 }
 
-export default LogoutPage;
+export default connect(null, { clearData, logout })(LogoutPage);

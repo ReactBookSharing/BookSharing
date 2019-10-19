@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Header from '../../shared/Header/Header';
 import Footer from '../../shared/Footer/Footer';
 import BookPreview from '../../shared/BookPreview/BookPreview';
+import './HomePage.css';
 class HomePage extends Component {
     state=  {
         books: [
@@ -43,27 +44,38 @@ class HomePage extends Component {
         return (
             <div className="HomePage">
                 <Header/>
+                <div className="Main-page-preview">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-md-5">
+                                <h1>Give books away. <br></br>Get books you want</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra lorem orci, nec tincidunt erat condimentum eu. Maecenas pellentesque leo eget accumsan semper. Maecenas malesuada augue id sodales tincidunt. Fusce varius eros eget lobortis feugiat. Proin aliquam placerat libero. Nulla ut arcu et nulla condimentum fermentum at non mauris. Maecenas a magna neque. Suspendisse potenti. Nunc erat risus, accumsan ut quam quis, aliquam tincidunt leo.
+                                </p>
+                                <br/>
+                                <form action="http://localhost:3000/register">
+                                    <input class="btn btn-success"  type="submit" value="Начать" />
+                                </form>
+                            </div>
+                            <div className="col-md-1"></div>
+                            <div className="col-md-4">
+                                <img className="MainPage-img" src='https://media.ldscdn.org/images/media-library/member-missionary/sharing-book-mormon-1379950-gallery.jpg' />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+{/* 
                 <div className="container">
-                <div className="row">
-                    <div className="col-md-8">
-                        <h1>Give books away. Get books you want</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra lorem orci, nec tincidunt erat condimentum eu. Maecenas pellentesque leo eget accumsan semper. Maecenas malesuada augue id sodales tincidunt. Fusce varius eros eget lobortis feugiat. Proin aliquam placerat libero. Nulla ut arcu et nulla condimentum fermentum at non mauris. Maecenas a magna neque. Suspendisse potenti. Nunc erat risus, accumsan ut quam quis, aliquam tincidunt leo.
-                        </p>
+                    <div className="row">
+                        <div className="col-md-10">
+                            <div className="books-list">
+                                {books.map((book) => (
+                                    <BookPreview book={book}/>
+                                ))}
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-md-4">
-                        <img className="MainPage-img" src='https://media.ldscdn.org/images/media-library/member-missionary/sharing-book-mormon-1379950-gallery.jpg' />
-                    </div>
-                </div>
-                </div>
-
-                <div className="container">
-                    <div className="books-list">
-                        {books.map((book) => (
-                            <BookPreview book={book}/>
-                        ))}
-                    </div>
-                </div>
+                </div> */}
                 <Footer/>
             </div>
 

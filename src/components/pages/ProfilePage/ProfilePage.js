@@ -4,7 +4,7 @@ import Footer from '../../shared/Footer/Footer';
 import ProfileLeft from './ProfileLeft/ProfileLeft';
 import ProfileRight from './ProfileRight/ProfileRight';
 import ProfileEdit from './ProfileEdit/ProfileEdit';
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import profileImg from '../../../assets/images/profile.png';
 import { connect } from 'react-redux';
 import './ProfilePage.css';
@@ -41,7 +41,7 @@ class ProfilePage extends Component {
   render() {
     const { profile } = this.state;
     // const { profile } = this.props;  instead of state
-    const { books } = this.state.profile;
+    // const { books } = this.state.profile;
     return (
       <div className="ProfilePage">
         <Header />

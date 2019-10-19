@@ -1,8 +1,13 @@
+.HomePage {
+    height: 100vh;
+    overflow: visible;
+}
 .Main-page-preview {
     padding: 40px;
     margin: 40px;
+    min-height: 60%;
 }
 
-.col-md-6 {
-    
+.MainPage-img {
+    max-width: 100%;
 }

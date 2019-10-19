@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './ProfileRight.css';
 function ProfileRight(props) {
     const { className, profile } = props;

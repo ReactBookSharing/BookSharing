@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import './RegisterPage.css';
 import { Formik } from 'formik';
 import { Link } from 'react-router-dom';
@@ -6,26 +6,22 @@ import Input from '../../shared/inputs/Input/Input';
 import Button from '../../shared/buttons/Button/Button';
 import { connect } from 'react-redux';
 import { login, register } from '../../../actions/auth.actions';
-class RegisterPage extends Component {
-  state = {
-    values: {}
-  };
+function RegisterPage(props){
+  const [values, setValues] = useState({});
 
-  componentDidUpdate(prevProps, prevState, snapshot) {
-    if(prevState.values !== this.state.values) {
-      // request to back
-      this.props.login(this.state.values);
-      this.props.history.push('/profile');
+  useEffect(() => {
+    if(values.username) {
+      props.login(values);
+      props.history.push('/profile');
     }
-  }
+  }, [values, props]);
 
-  handleSubmit = values => {
-    this.setState({
-      values
-    });
+
+  const handleSubmit = newValues => {
+    setValues(newValues);
   };
 
-  validateForm = values => {
+  const validateForm = values => {
     const errors = {};
     if (!values.username) {
       errors.username = 'Введите имя пользователя';
@@ -60,7 +56,7 @@ class RegisterPage extends Component {
     return errors;
   };
 
-  renderForm = ({
+  const renderForm = ({
     handleSubmit,
     handleChange,
     errors,
@@ -220,7 +216,7 @@ class RegisterPage extends Component {
     </form>
   );
 
-  render() {
+  // render() {
     return (
       <div className="RegisterPage">
         <div className="container RegisterPage__container">
@@ -233,10 +229,10 @@ class RegisterPage extends Component {
             <div className="col-8 offset-2">
               <Formik
                 onSubmit={values => {
-                  this.handleSubmit(values);
+                  handleSubmit(values);
                 }}
-                render={this.renderForm}
-                validate={this.validateForm}
+                render={renderForm}
+                validate={validateForm}
                 initialValues={{
                   username: '',
                   email: '',
@@ -253,7 +249,7 @@ class RegisterPage extends Component {
         </div>
       </div>
     );
-  }
+  // }
 }
 
 export default connect(null, { login, register })(RegisterPage);

@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 import { connect } from 'react-redux';
 import { changeLang } from '../../../actions/common.actions';
 function Header(props) {
-  const handleOnClick = e => {
+
+  const handleOnClick = useCallback(e => {
     if (e.target.innerText === 'EN') {
       props.changeLang('en');
     } else {
       props.changeLang('ru');
     }
-  };
+  }, [props]);
+
   const { lang, langName, token } = props;
   const navLinks = [
     {

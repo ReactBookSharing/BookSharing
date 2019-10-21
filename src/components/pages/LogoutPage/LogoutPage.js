@@ -6,8 +6,15 @@ class LogoutPage extends Component {
     componentDidMount() {
         this.props.logout();
         this.props.clearData();
-        localStorage.clear();
         this.props.history.push('/');
+    }
+
+    componentWillUnmount() {
+        const token = localStorage.getItem('token');
+        const lang = localStorage.getItem('lang');
+        localStorage.clear();
+        localStorage.setItem('token', token);
+        localStorage.setItem('lang', lang);
     }
 
     render() {

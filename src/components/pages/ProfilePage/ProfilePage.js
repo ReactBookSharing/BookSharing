@@ -8,6 +8,7 @@ import BookList from '../../shared/BookList/BookList';
 import { Route, Switch } from 'react-router-dom';
 import profileImg from '../../../assets/images/profile.png';
 import { connect } from 'react-redux';
+import back from '../../../assets/mockup.json';
 import './ProfilePage.css';
 class ProfilePage extends Component {
   state = {
@@ -23,38 +24,7 @@ class ProfilePage extends Component {
         'Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus how to pursue pleasure rationally encounter but because those who do not know how to pursue consequences that are extremely',
       address: 'Алматы, Радостовца 4'
     },
-    books: [
-      {
-        img:
-          'https://prodimage.images-bn.com/pimages/9780062024329_p0_v1_s550x406.jpg',
-        book_name: 'Alchemist',
-        book_author: 'Paulo Coelho',
-        created_year: 2017,
-        book_owner: {
-          id: 1,
-          name: 'Derbes',
-          surname: 'Utebaliyev',
-          username: 'derbess',
-          email: 'uderbes@gmail.com',
-          mobile: '+77471194810'
-        }
-      },
-      {
-        img:
-          'https://prodimage.images-bn.com/pimages/9780062024329_p0_v1_s550x406.jpg',
-        book_name: 'Alchemist',
-        book_author: 'Paulo Coelho',
-        created_year: 2017,
-        book_owner: {
-          id: 1,
-          name: 'Derbes',
-          surname: 'Utebaliyev',
-          username: 'derbess',
-          email: 'uderbes@gmail.com',
-          mobile: '+77471194810'
-        }
-      }
-    ]
+    books: back.books
   };
   render() {
     const { profile } = this.state;

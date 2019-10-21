@@ -1,16 +1,16 @@
 export const GET_LANG = 'GET_LANG';
 export const CHANGE_LANG ='CHANGE_LANG';
 
-export const getLang = langJSON => dispatch => {
+export const getLang = (langJSON, langName) => dispatch => {
     dispatch({
-        action: GET_LANG,
+        type: GET_LANG,
         payload: langJSON
     });
 }
 
 export const changeLang = lang => dispatch => {
     dispatch({
-        action: CHANGE_LANG,
+        type: CHANGE_LANG,
         payload: lang
     });
 }

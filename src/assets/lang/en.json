@@ -1,0 +1,11 @@
+{
+    "HEADER": {
+        "MAIN": "Main",
+        "LIST": "List",
+        "FAQ": "FAQ",
+        "LOGIN": "Login",
+        "REGISTER": "Register",
+        "LOGOUT": "Logout",
+        "PROFILE": "Profile" 
+    }
+}

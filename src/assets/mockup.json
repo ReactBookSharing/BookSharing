@@ -1,0 +1,282 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "@asuleiman",
+            "password": "test1234",
+            "email": "asuleyman2403@gmail.com",
+            "phone": "+77475896699",
+            "name": "Assyl",
+            "surname": "Suleiman",
+            "whatsapp": "+77475896699"
+        },
+        {
+            "id": 2,
+            "username": "@derbess",
+            "password": "test1234",
+            "email": "codefazzer@gmail.com",
+            "phone": "+77471194810",
+            "name": "Derbes",
+            "surname": "Utebaliyev",
+            "whatsapp": "+77471194810"
+        },
+        {
+            "id": 3,
+            "username": "@bashenov98",
+            "password": "test1234",
+            "email": "bashenov98@gmail.com",
+            "phone": "+77719052133",
+            "name": "Daniyar",
+            "surname": "Bashenov",
+            "whatsapp": "+77471194810"
+        }
+    ],
+    "profile": {
+        "rating": 4.6,
+        "user": {
+            "id": 1,
+            "username": "@asuleiman",
+            "password": "test1234",
+            "email": "asuleyman2403@gmail.com",
+            "phone": "+77475896699",
+            "name": "Assyl",
+            "surname": "Suleiman",
+            "whatsapp": "+77475896699"
+        },
+        "photos": [
+            "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1",
+            "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1",
+            "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1"
+        ]
+    },
+    "books": [
+        {
+            "id": 1,
+            "status": "exchange",
+            "title": "Book title",
+            "author": "Author Bookov",
+            "genre": "Fantasy",
+            "price": 3000,
+            "lang": "Russian",
+            "description": "This is book book",
+            "photos": [
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044"
+            ],
+            "owner": {
+                "rating": 4.6,
+                "user": {
+                    "id": 1,
+                    "username": "@asuleiman",
+                    "password": "test1234",
+                    "email": "asuleyman2403@gmail.com",
+                    "phone": "+77475896699",
+                    "name": "Assyl",
+                    "surname": "Suleiman",
+                    "whatsapp": "+77475896699"
+                },
+                "photos": [
+                    "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1",
+                    "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1",
+                    "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1"
+                ]
+            },
+            "on_hands_id": 1,
+            "release_year": 2019
+        },
+        {
+            "id": 1,
+            "status": "exchange",
+            "title": "Book title",
+            "author": "Author Bookov",
+            "genre": "Fantasy",
+            "price": 3000,
+            "lang": "Russian",
+            "description": "This is book book",
+            "photos": [
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044"
+            ],
+            "owner": {
+                "rating": 4.6,
+                "user": {
+                    "id": 1,
+                    "username": "@asuleiman",
+                    "password": "test1234",
+                    "email": "asuleyman2403@gmail.com",
+                    "phone": "+77475896699",
+                    "name": "Assyl",
+                    "surname": "Suleiman",
+                    "whatsapp": "+77475896699"
+                },
+                "photos": [
+                    "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1",
+                    "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1",
+                    "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1"
+                ]
+            },
+            "on_hands_id": 1,
+            "release_year": 2019
+        },
+        {
+            "id": 1,
+            "status": "exchange",
+            "title": "Book title",
+            "author": "Author Bookov",
+            "genre": "Fantasy",
+            "price": 3000,
+            "lang": "Russian",
+            "description": "This is book book",
+            "photos": [
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044"
+            ],
+            "owner": {
+                "rating": 4.6,
+                "user": {
+                    "id": 1,
+                    "username": "@asuleiman",
+                    "password": "test1234",
+                    "email": "asuleyman2403@gmail.com",
+                    "phone": "+77475896699",
+                    "name": "Assyl",
+                    "surname": "Suleiman",
+                    "whatsapp": "+77475896699"
+                },
+                "photos": [
+                    "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1",
+                    "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1",
+                    "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1"
+                ]
+            },
+            "on_hands_id": 1,
+            "release_year": 2019
+        },
+        {
+            "id": 1,
+            "status": "exchange",
+            "title": "Book title",
+            "author": "Author Bookov",
+            "genre": "Fantasy",
+            "price": 3000,
+            "lang": "Russian",
+            "description": "This is book book",
+            "photos": [
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044"
+            ],
+            "owner": {
+                "rating": 4.6,
+                "user": {
+                    "id": 1,
+                    "username": "@asuleiman",
+                    "password": "test1234",
+                    "email": "asuleyman2403@gmail.com",
+                    "phone": "+77475896699",
+                    "name": "Assyl",
+                    "surname": "Suleiman",
+                    "whatsapp": "+77475896699"
+                },
+                "photos": [
+                    "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1",
+                    "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1",
+                    "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1"
+                ]
+            },
+            "on_hands_id": 1,
+            "release_year": 2019
+        },
+        {
+            "id": 1,
+            "status": "exchange",
+            "title": "Book title",
+            "author": "Author Bookov",
+            "genre": "Fantasy",
+            "price": 3000,
+            "lang": "Russian",
+            "description": "This is book book",
+            "photos": [
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044"
+            ],
+            "owner": {
+                "rating": 4.6,
+                "user": {
+                    "id": 1,
+                    "username": "@asuleiman",
+                    "password": "test1234",
+                    "email": "asuleyman2403@gmail.com",
+                    "phone": "+77475896699",
+                    "name": "Assyl",
+                    "surname": "Suleiman",
+                    "whatsapp": "+77475896699"
+                },
+                "photos": [
+                    "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1",
+                    "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1",
+                    "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1"
+                ]
+            },
+            "on_hands_id": 1,
+            "release_year": 2019
+        },
+        {
+            "id": 1,
+            "status": "exchange",
+            "title": "Book title",
+            "author": "Author Bookov",
+            "genre": "Fantasy",
+            "price": 3000,
+            "lang": "Russian",
+            "description": "This is book book",
+            "photos": [
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044",
+                "https://cdn.shopify.com/s/files/1/1722/0531/products/custom-birthday-book-slate_1024x1024.jpg?v=1546547044"
+            ],
+            "owner": {
+                "rating": 4.6,
+                "user": {
+                    "id": 1,
+                    "username": "@asuleiman",
+                    "password": "test1234",
+                    "email": "asuleyman2403@gmail.com",
+                    "phone": "+77475896699",
+                    "name": "Assyl",
+                    "surname": "Suleiman",
+                    "whatsapp": "+77475896699"
+                },
+                "photos": [
+                    "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1",
+                    "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1",
+                    "https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1"
+                ]
+            },
+            "on_hands_id": 1,
+            "release_year": 2019
+        }
+    ]
+}

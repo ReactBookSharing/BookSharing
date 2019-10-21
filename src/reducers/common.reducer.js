@@ -1,7 +1,8 @@
-import { GET_LANG } from '../actions/common.actions';
-
+import { GET_LANG, CHANGE_LANG } from '../actions/common.actions';
+import ru from '../assets/lang/ru.json';
 const initialState = {
-    lang: ''
+    lang: ru,
+    langName: 'ru'
 };
 
 export default function(state=initialState, action) {

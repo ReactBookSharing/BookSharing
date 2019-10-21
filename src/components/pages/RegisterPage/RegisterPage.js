@@ -11,10 +11,6 @@ class RegisterPage extends Component {
     values: {}
   };
 
-  componentDidMount() {
-
-  }
-
   componentDidUpdate(prevProps, prevState, snapshot) {
     if(prevState.values !== this.state.values) {
       // request to back
@@ -181,7 +177,7 @@ class RegisterPage extends Component {
         </div>
         <div className="col-12 col-md-6">
           <Input
-            name="pasword2"
+            name="password2"
             type="text"
             placeholder="Повторите пароль"
             label="Повторите пароль"

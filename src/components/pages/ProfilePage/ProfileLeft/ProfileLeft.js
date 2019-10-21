@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './ProfileLeft.css';
-class ProfileLeft extends Component {
-  render() {
-    const { profile, className } = this.props;
+function ProfileLeft(props) {
+    const { profile, className } = props;
     return (
       <div className={`${className} ProfileLeft`}>
         <div className="card">
@@ -61,7 +60,7 @@ class ProfileLeft extends Component {
         </div>
       </div>
     );
-  }
+  // }
 }
 
 export default ProfileLeft;
